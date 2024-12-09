@@ -3,6 +3,8 @@ import "./Home.css";
 import { Button, Col, Row } from "react-bootstrap";
 import Card from "react-bootstrap/Card";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { useKeenSlider } from "keen-slider/react";
+import "keen-slider/keen-slider.min.css";
 import WorldImg from "../../assets/image-removebg-preview.png";
 // Import Swiper styles
 import "swiper/css";
@@ -33,7 +35,195 @@ import {
   WorldSvg
 } from "../svg";
 // import required modules
+
+const animation = { duration: 10000, easing: (t) => t };
+const animation2 = { duration: 5000, easing: (t) => t };
+const animation3 = { duration: 8000, easing: (t) => t };
+function Arrow(props) {
+  const disabled = props.disabled ? " arrow--disabled" : "";
+  return (
+    <svg
+      onClick={props.onClick}
+      className={`arrow ${
+        props.left ? "arrow--left" : "arrow--right"
+      } ${disabled}`}
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+    >
+      {props.left && (
+        <path d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z" />
+      )}
+      {!props.left && (
+        <path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z" />
+      )}
+    </svg>
+  );
+}
 const Home = () => {
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const [sliderRef, instanceRef] = useKeenSlider({
+    slides: {
+      perView: 4 // Default number of slides visible
+    },
+    loop: true,
+    renderMode: "performance",
+    drag: false,
+    initial: 0,
+    created(s) {
+      s.moveToIdx(5, true, animation);
+    },
+    updated(s) {
+      s.moveToIdx(s.track.details.abs + 5, true, animation);
+    },
+    animationEnded(s) {
+      s.moveToIdx(s.track.details.abs + 5, true, animation);
+    },
+    slideChanged(slider) {
+      setCurrentSlide(slider.track.details.rel);
+    },
+
+    // breakpoints: {
+    //         "(max-width: 470px)": {
+    //     slides: { perView: 2 },
+    //   },
+    //   "(min-width: 471px) and (max-width: 991px)": {
+    //     slides: { perView: 3 },
+    //   },
+    //   "(min-width: 992px)": {
+    //     slides: { perView: 4 },
+    //   },
+
+    // },
+    breakpoints: {
+      "(max-width: 470px)": {
+        slides: { perView: 2 }
+      },
+      "(min-width: 471px) and (max-width: 991px)": {
+        slides: { perView: 3 }
+      },
+      "(min-width: 992px)": {
+        slides: { perView: 4 }
+      }
+    }
+  });
+  const [sliderRef4] = useKeenSlider({
+    slides: {
+      perView: 4 // Default number of slides visible
+    },
+    loop: true,
+    renderMode: "performance",
+    drag: false,
+    initial: 0,
+    created(s) {
+      s.moveToIdx(5, true, animation);
+    },
+    updated(s) {
+      s.moveToIdx(s.track.details.abs + 5, true, animation);
+    },
+    animationEnded(s) {
+      s.moveToIdx(s.track.details.abs + 5, true, animation);
+    },
+    slideChanged(slider) {
+      setCurrentSlide(slider.track.details.rel);
+    },
+    breakpoints: {
+      "(max-width: 415px)": {
+        slides: { perView: 1,spacing:0 } // 2 slides per view for medium screens
+      },
+      "(min-width: 416px) and (max-width: 539px)": {
+        slides: { perView: 1 } // 2 slides per view for medium screens
+      },
+      "(min-width: 540px) and (max-width: 631px)": {
+        slides: { perView: 1.3 } // 2 slides per view for medium screens
+      },
+      "(min-width: 630px) and (max-width: 991px)": {
+        slides: { perView: 2 } // 2 slides per view for medium screens
+      },
+      "(min-width: 992px) and (max-width: 1050px)": {
+        slides: { perView: 3 } // 3 slides per view for larger but not too big screens
+      },
+      "(min-width: 1051px)": {
+        slides: { perView: 4 } // 4 slides per view for larger screens
+      }
+    }
+    // breakpoints: {
+
+    //   "(max-width: 470px)": {
+    //     slides: { perView: 1 },
+    //   },
+    //   "(min-width: 471px) and (max-width: 991px)": {
+    //     slides: { perView: 2 },
+    //   },
+    //   "(min-width: 992px) and (max-width: 1050px)": {
+    //     slides: { perView: 3 },
+    //   },
+    //   "(min-width: 1051px)": {
+    //     slides: { perView: 4 },
+    //   },
+    // },
+  });
+  const [sliderRef2] = useKeenSlider({
+    slides: {
+      perView: 7
+    },
+    loop: true,
+    renderMode: "performance",
+    drag: false,
+    created(s) {
+      s.moveToIdx(5, true, animation2);
+    },
+    updated(s) {
+      s.moveToIdx(s.track.details.abs + 5, true, animation2);
+    },
+    animationEnded(s) {
+      s.moveToIdx(s.track.details.abs + 5, true, animation2);
+    },
+    breakpoints: {
+      "(max-width: 470px)": {
+        slides: { perView: 2 }
+      },
+      "(min-width: 471px) and (max-width: 991px)": {
+        slides: { perView: 3 }
+      },
+      "(min-width: 992px) and (max-width: 1199px)": {
+        slides: { perView: 5 }
+      },
+      "(min-width: 1200px)": {
+        slides: { perView: 7 } // Show 5 slides
+      }
+    }
+  });
+  const [sliderRef3] = useKeenSlider({
+    slides: {
+      perView: 7
+    },
+    loop: true,
+    renderMode: "performance",
+    drag: false,
+    created(s) {
+      s.moveToIdx(5, true, animation3);
+    },
+    updated(s) {
+      s.moveToIdx(s.track.details.abs + 5, true, animation3);
+    },
+    animationEnded(s) {
+      s.moveToIdx(s.track.details.abs + 5, true, animation3);
+    },
+    breakpoints: {
+      "(max-width: 470px)": {
+        slides: { perView: 2 }
+      },
+      "(min-width: 471px) and (max-width: 991px)": {
+        slides: { perView: 3 }
+      },
+      "(min-width: 992px) and (max-width: 1199px)": {
+        slides: { perView: 5 }
+      },
+      "(min-width: 1200px)": {
+        slides: { perView: 7 } // Show 5 slides
+      }
+    }
+  });
   const testimonialImg = [
     testimonial_1,
     testimonial_2,
@@ -243,7 +433,7 @@ const Home = () => {
           slidesToShow: 1, // Show 1 card for screens smaller than 600px
           slidesToScroll: 1,
           infinite: true,
-          autoplay: true
+          autoplay: true,
         }
       }
     ]
@@ -765,34 +955,35 @@ const Home = () => {
   return (
     <div className="home">
       {/* traders section */}
-
-      <video width="100%" autoPlay loop muted id="myVideo">
-        <source src={video} type="video/mp4" />
-      </video>
-      <div className="traders mx-auto content">
-        <div className="title">
-          <h1 className="heading">
-            Built by traders <br /> ➔ for traders
-          </h1>
-          <p>
-            Join over 750,000 traders in the world’s leading firm. Trade in a
-            fully simulated environment and earn up to 100% rewards.
-          </p>
-        </div>
-        <div className="d-flex gap-3 justify-content-center">
-          <Button className="nav-btn text-white rounded-3">
-            Buy Challenge
-          </Button>
-          <Button variant="border text-white border rounded-3">
-            Join Competition
-          </Button>
+      <div className="position-relative">
+        <video width="100%" autoPlay loop muted id="myVideo">
+          <source src={video} type="video/mp4" />
+        </video>
+        <div className="traders mx-auto content">
+          <div className="title">
+            <h1 className="heading">
+              Built by traders <br /> ➔ for traders
+            </h1>
+            <p>
+              Join over 750,000 traders in the world’s leading firm. Trade in a
+              fully simulated environment and earn up to 100% rewards.
+            </p>
+          </div>
+          <div className="d-flex gap-3 justify-content-center">
+            <Button className="nav-btn text-white rounded-3">
+              Buy Challenge
+            </Button>
+            <Button variant="border text-white border rounded-3">
+              Join Competition
+            </Button>
+          </div>
         </div>
       </div>
       {/* funding cards */}
-      <div className="funding my-4">
+      <div className="funding">
         <h3 className="text-center my-3">Why FundingPips?</h3>
 
-        <div className="funding-cards container my-4">
+        <div className="funding-cards container my-4 keen-slider">
           <Swiper
             grabCursor={true}
             pagination={{
@@ -1182,7 +1373,9 @@ const Home = () => {
             width={655}
             height={620}
           />
-          <WorldSvg />
+          <div className="bg-svg">
+            <WorldSvg />
+          </div>
           <div className="content position-absolute">
             <h1 className="text-center ">
               Over $80 Million Earned by Users Globally
@@ -1208,7 +1401,7 @@ const Home = () => {
             className="position-absolute country-card"
           >
             <div className="position-relative">
-              <Slider {...settings}>
+              {/* <Slider {...settings}>
                 {countryData?.map((item, index) => (
                   <div key={`country-${index}`}>
                     <Card className="rounded-4 bg-transparent mx-3 border-white">
@@ -1227,14 +1420,73 @@ const Home = () => {
                     </Card>
                   </div>
                 ))}
-              </Slider>
+              </Slider> */}
+              <div className="position-relative" style={{ overflow: "hidden" }}>
+                <div ref={sliderRef} className="keen-slider">
+                  {countryData?.map((item, index) => (
+                    <div
+                      key={`country-${index}`}
+                      className="keen-slider__slide mx-md-1"
+                    >
+                      <Card className="rounded-4 bg-transparent mx-3 border-white">
+                        <Card.Body>
+                          <div className="d-flex gap-2">
+                            {item.svg}
+                            <Card.Subtitle className="text-white country-name my-1">
+                              {item?.name}
+                            </Card.Subtitle>
+                          </div>
+
+                          <Card.Text className="text-white country-trade">
+                            {item?.amount}
+                          </Card.Text>
+                        </Card.Body>
+                      </Card>
+                    </div>
+                  ))}
+                </div>
+                {instanceRef.current && (
+                  <>
+                    <Arrow
+                      left
+                      onClick={(e) =>
+                        e.stopPropagation() || instanceRef.current?.prev()
+                      }
+                      disabled={currentSlide === 0}
+                    />
+
+                    <Arrow
+                      onClick={(e) =>
+                        e.stopPropagation() || instanceRef.current?.next()
+                      }
+                      disabled={
+                        currentSlide ===
+                        instanceRef.current.track.details.slides.length - 1
+                      }
+                    />
+                  </>
+                )}
+              </div>
             </div>
           </div>
         </div>
       </div>
       {/* card sliders */}
-      <div className="card-slider mt-5">
-        <Slider {...cardSvg}>
+      <div className="card-slider mt-5 keen-slider" ref={sliderRef2}>
+        {/* <div ref={sliderRef2} className="keen-slider"> */}
+        {cardSvg2Img?.map((item, index) => (
+          <div key={`slider2-${index}`} className="keen-slider__slide ">
+            <Card className="rounded-4 card-bg mx-3">
+              <Card.Body>
+                <div className="d-flex justify-content-center">
+                  <img src={item} alt="" />
+                </div>
+              </Card.Body>
+            </Card>
+          </div>
+        ))}
+        {/* </div> */}
+        {/* <Slider {...cardSvg}>
           {cardSvg2Img?.map((item, index) => (
             <div key={`slider2-${index}`}>
               <Card className="rounded-4 card-bg mx-3">
@@ -1246,9 +1498,9 @@ const Home = () => {
               </Card>
             </div>
           ))}
-        </Slider>
+        </Slider> */}
       </div>
-      <div className="card-slider my-5">
+      {/* <div className="card-slider my-5">
         <Slider {...cardSvg2}>
           {cardSvg2Img?.map((item, index) => (
             <div key={`slider2-${index}`}>
@@ -1262,6 +1514,20 @@ const Home = () => {
             </div>
           ))}
         </Slider>
+      </div> */}
+      <div className="card-slider my-5 keen-slider" ref={sliderRef3}>
+        {/* <div ref={sliderRef2} className="keen-slider"> */}
+        {cardSvg2Img?.map((item, index) => (
+          <div key={`slider2-${index}`} className="keen-slider__slide ">
+            <Card className="rounded-4 card-bg mx-3">
+              <Card.Body>
+                <div className="d-flex justify-content-center">
+                  <img src={item} alt="" />
+                </div>
+              </Card.Body>
+            </Card>
+          </div>
+        ))}
       </div>
       <div className="tesimonials mx-auto">
         <div className="title">
@@ -1299,7 +1565,18 @@ const Home = () => {
           </h1>
         </div>
         <div className="testimonial-img">
-          <Slider {...testimonialSetting}>
+          <div className="card-slider my-5 keen-slider" ref={sliderRef4}>
+            {testimonialImg?.map((item, index) => (
+              <div key={`testimonial-${index}`} className="keen-slider__slide">
+                <div className="d-flex justify-content-center">
+                  <img src={item} alt="" />
+                </div>
+              </div>
+            ))}
+          </div>
+          
+        </div>
+        {/* <Slider {...testimonialSetting}>
             {testimonialImg?.map((item, index) => (
               <div key={`testimonial-${index}`}>
                 <div className="d-flex justify-content-center">
@@ -1307,8 +1584,7 @@ const Home = () => {
                 </div>
               </div>
             ))}
-          </Slider>
-        </div>
+          </Slider> */}
       </div>
     </div>
   );

@@ -3,24 +3,19 @@ import Home from "./components/Home";
 import Footer from "./components/commom/Footer/Footer";
 import Header from "./components/commom/Header/Header";
 import { useState } from "react";
+import { Route, Routes } from "react-router-dom";
+import Terms from "./components/Terms";
 
 function App() {
-  // const [isNavOPen, setNavOpen] = useState(false);
-  // const navbarHeight = 0; // Adjust as needed
-  // const responsiveNavbarHeight = 330; // Height when expanded
-
-  // const contentStyle = {
-  //   marginTop: isNavOPen ? responsiveNavbarHeight : navbarHeight
-  //   // marginTop: window.innerWidth <= 990 ? responsiveNavbarHeight : navbarHeight
-  // };
   return (
     <div className="main">
       <section className="header">
         <Header />
       </section>
-      <section>
-        <Home />
-      </section>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="terms" element={<Terms />} />
+      </Routes>
       <section className="pb-2">
         <Footer />
       </section>

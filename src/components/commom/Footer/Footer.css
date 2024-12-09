@@ -9,7 +9,6 @@
 }
 
 .footer .title h1 {
-  font-size: 80px;
   padding: 0px 15%;
 }
 
@@ -108,7 +107,6 @@
     min-height: 350px;
   }
   .footer .title h1 {
-    font-size: 67px;
     padding: 0px 10%;
   }
   .social .logo svg {
@@ -151,9 +149,6 @@
   .card-text {
     font-size: 14px;
   }
-  .footer .title h1 {
-    font-size: 60px;
-  }
 
   .social .logo span {
     font-size: 18px;
@@ -173,7 +168,6 @@
 }
 @media (max-width: 768px) {
   .footer .title h1 {
-    font-size: 50px;
     padding: 0px 5%;
   }
   .symbols {
@@ -220,7 +214,6 @@
   }
 
   .footer .title h1 {
-    font-size: 30px;
     padding: 0px 0%;
   }
 
@@ -331,6 +324,9 @@
 @media (max-width: 412px) {
   .symbols {
     width: 100%;
+  }
+  .about .iso {
+    padding: 0px 0px !important;
   }
 }
 

@@ -14,14 +14,19 @@
   color: white;
   z-index: 1; /* Ensures content is above video */
   text-align: center;
+  top: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
 }
 #myVideo {
-  position: absolute;
+  position: sticky;
   right: 0;
   bottom: 0;
   min-width: 100%;
   min-height: 100%;
   z-index: 1;
+  /* transform: translateY(-10%); */
 }
 .home {
   padding: auto 3rem !important;
@@ -44,7 +49,9 @@
   line-height: 30px;
   text-align: center;
 }
-
+.funding {
+  margin: 0.5rem 0px;
+}
 .funding-card {
   width: 300px;
   min-height: 17rem;
@@ -211,6 +218,39 @@
 .journey-card .card-details {
   min-height: 380px;
 }
+.arrow {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 170%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  fill: #fff;
+  cursor: pointer;
+}
+
+.arrow--left {
+  left: 40%;
+  transform: translateX(-50%);
+}
+
+.arrow--right {
+  right: 40%;
+  transform: translateX(-50%);
+}
+
+.arrow--disabled {
+  fill: rgba(255, 255, 255, 0.5);
+}
+.keen-slider__slide {
+  flex: 0 0 auto; /* Prevent slides from shrinking or stretching */
+  width: calc(100% / 4); /* Adjust based on `perView` slides */
+  box-sizing: border-box;
+}
+.keen-slider {
+  overflow: hidden !important; /* Prevent children from overflowing */
+  width: 100% !important; /* Ensure slider fits within its parent */
+}
 @media (max-width: 1324px) {
   .journey {
     width: 90%;
@@ -269,10 +309,6 @@
     background-color: rgba(0, 0, 0, 0.15);
   }
 
-  .fundingpipes {
-    /* width: 'auto'; */
-    /* width: 20%; */
-  }
   .buy-challenge button {
     font-size: 24px;
   }
@@ -307,7 +343,7 @@
     font-size: 60px;
   }
 }
-@media (min-width: 761px) and (max-width: 900px) {
+@media (min-width: 761px) and (max-width: 920px) {
   .traders {
     /* margin-top: 80px; */
     width: 500px;
@@ -376,7 +412,8 @@
     font-size: 50px;
   }
   #myVideo {
-    top: -285px;
+    top: 50%;
+    transform: translateY(10%);
   }
 }
 @media (min-width: 542px) and (max-width: 640px) {
@@ -384,14 +421,15 @@
     width: 90% !important;
     height: 90% !important;
   }
+  .funding {
+    margin-top: 6rem !important;
+  }
 }
 @media (min-width: 541px) and (max-width: 760px) {
   .traders {
-    /* margin-top: 80px; */
     width: 95%;
   }
   .step {
-    /* width: 85%; */
     background-color: rgba(0, 0, 0, 0.15);
   }
   .traders .title h1,
@@ -402,11 +440,6 @@
 
   .funding-card {
     width: 100%;
-  }
-
-  .fundingpipes {
-    /* width: 30%; */
-    /* width: 'auto'; */
   }
 
   .buy-challenge h1 {
@@ -448,7 +481,11 @@
   }
 
   #myVideo {
-    top: -110px;
+    top: 50%;
+    transform: translateY(10%);
+  }
+  .funding {
+    margin-top: 3rem;
   }
 }
 
@@ -499,7 +536,7 @@
   }
   .landing-trade svg {
     width: 400px;
-    top: 150px !important;
+    /* top: 150px !important; */
   }
   .landing-trade .content {
     width: 95%;
@@ -553,11 +590,72 @@
   }
 
   #myVideo {
-    top: -130px;
+    /* transform: translateY(-20%); */
+  }
+  .arrow--right {
+    right: 0%;
+    left: 60%;
+  }
+  .funding {
+    margin-top: 11rem !important;
+  }
+
+  #myVideo {
+    top: 0%;
+    transform: translateY(45%);
+  }
+
+  .content {
+    top: 0%;
   }
 }
-
+@media (min-width: 416px) and (max-width: 541px) {
+  .testimonial-img img {
+    width: 70% !important;
+  }
+  .landing-trade img {
+    width: 400px;
+    height: 370px;
+    top: -114px;
+  }
+  .landing-trade svg {
+    width: 345px;
+    top: 50px !important;
+  }
+  .landing-trade .content h1 {
+    font-size: 35px;
+  }
+  .content {
+    padding: 0px 20px;
+  }
+  .landing-trade .content p {
+    font-size: 18px;
+    padding: 0px 0%;
+  }
+  .landing-trade .content-h3 {
+    top: 245px !important;
+  }
+  .country-card {
+    top: 360px !important;
+  }
+  .landing-trade {
+    height: 575px;
+  }
+  .arrow--left,
+  .arrow--right {
+    display: none;
+  }
+  .cards > :first-child,
+  .about > :first-child {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
 @media (min-width: 312px) and (max-width: 415px) {
+  .journey-card .card-details .card-text,
+  .journey-card .card-details .feild-value {
+    font-size: 16px;
+  }
   .traders {
     /* margin-top: 30px; */
     width: 95%;
@@ -579,29 +677,48 @@
   .buy-challenge button {
     font-size: 20px;
   }
-  .landing-trade img {
-    width: 360px;
-    height: 400px;
-  }
   .img-set {
     top: -125px;
   }
+  .landing-trade {
+    height: 500px;
+    margin-top: 95px;
+  }
+  .landing-trade img {
+    width: 330px;
+    height: 320px;
+    top: -80px;
+  }
+  .content {
+    padding: 0px 20px;
+  }
+  .arrow--left,
+  .arrow--right {
+    display: none;
+  }
+
   .landing-trade .content {
     width: 95%;
   }
   .landing-trade .content h1 {
-    font-size: 35px;
+    font-size: 30px;
   }
-  .landing-trade svg {
-    top: 45px !important;
+  .landing-trade .bg-svg svg {
+    top: 35px !important;
     width: 100%;
   }
+  .arrow--left,
+  .arrow--right {
+    top: 150% !important;
+  }
   .landing-trade .content p {
-    padding: 0px 40px !important;
-    font-size: 19px;
+    padding: 0px 0px !important;
+    font-size: 16px;
   }
   .landing-trade .content-h3 {
-    top: 260px !important;
+    top: 230px !important;
+    left: 5%;
+    transform: translateX(5%);
   }
   .card-slider .card-bg img {
     width: 100px !important;
@@ -614,10 +731,43 @@
     padding: 0px 20px;
   }
   .country-card {
-    top: 365px !important;
+    top: 335px !important;
   }
   .heading {
-    font-size: 35px;
+    font-size: 30px;
+  }
+
+  .traders button {
+    font-size: 14px;
+  }
+
+  .traders .title p,
+  .journey .title p {
+    font-size: 15px;
+  }
+  .content {
+    top: 0%;
+  }
+
+  #myVideo {
+    top: 30%;
+    transform: translateY(50%);
+  }
+  .keen-slider__slide {
+    margin-right: 0; /* Remove right margin for small screens */
+  }
+
+  .keen-slider {
+    padding: 0 10px; /* Adjust padding for small screens */
+  }
+  .testimonial-img img {
+    width: 80% !important;
+  }
+
+  .cards > :first-child,
+  .about > :first-child {
+    margin-left: 0px;
+    margin-right: 0px;
   }
 }
 

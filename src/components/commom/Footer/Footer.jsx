@@ -57,7 +57,9 @@ const Footer = () => {
   return (
     <div className="footer mt-5">
       <div className="title mx-auto">
-        <h1 className="text-center">Empowering Traders in 195+ Countries</h1>
+        <h1 className="text-center heading">
+          Empowering Traders in 195+ Countries
+        </h1>
       </div>
 
       <div className="cards mt-5 mx-auto">
@@ -159,7 +161,7 @@ const Footer = () => {
       </div>
 
       <div className="about mt-5 mx-auto">
-        <Row className="justify-content-evenly g-5">
+        <Row className="justify-content-evenly g-5 g-md-3">
           <Col xs={12} sm={6} md={6} lg={3}>
             <h5>Company</h5>
             <ul style={{ listStyle: "none", padding: 0 }}>
@@ -365,7 +367,7 @@ const Footer = () => {
 
                 {/* Trustpilot Reviews */}
                 <div className="d-flex align-items-center">
-                  <TrustPilotSvg/>
+                  <TrustPilotSvg />
                   <span className="bg-white text-dark reviews">
                     15.7K Reviews
                   </span>

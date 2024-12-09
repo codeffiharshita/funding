@@ -1,3 +1,35 @@
+.nav-link {
+  display: block;
+  padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+  font-size: var(--bs-nav-link-font-size);
+  font-weight: var(--bs-nav-link-font-weight);
+  color: white !important;
+  text-decoration: none;
+  background: 0 0;
+  border: 0;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out,
+    border-color .15s ease-in-out;
+}
+/* Enable hover dropdown */
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+  background-color: rgba(217, 217, 217, 0.1);
+}
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0; /* Adjust margin if needed */
+}
+.nav-item.dropdown:hover .nav-link {
+  /* color: #fff; Adjust hover link color if needed */
+  background-color: transparent;
+}
+
+/* Adjust styles for dropdown-menu */
+.dropdown-menu {
+  margin-top: 0.5rem; /* Add slight spacing if desired */
+  border-radius: 0.25rem; /* Optional rounded corners */
+  background-color: transparent; /* Optional background color */
+}
+
 .nav-font {
   font-weight: 400;
   font-size: 20px;

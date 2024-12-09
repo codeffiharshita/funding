@@ -1,7 +1,13 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 body {
   margin: 0;
   padding: 0;
-  border: 1px solid red;
+  overflow-x: hidden;
+  box-sizing: border-box;
 }
 .main {
   background-color: #263aa8;
