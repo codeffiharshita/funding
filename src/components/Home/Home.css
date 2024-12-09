@@ -1,0 +1,644 @@
+/* Add this to your main CSS file (e.g., App.css) */
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+.traders {
+  margin-top: 49px;
+  width: 796px;
+  max-width: 800px;
+  overflow: hidden;
+}
+.content {
+  position: relative;
+  padding: 30px 20px;
+  color: white;
+  z-index: 1; /* Ensures content is above video */
+  text-align: center;
+}
+#myVideo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: 1;
+}
+.home {
+  padding: auto 3rem !important;
+}
+.heading {
+  font-size: 65px;
+}
+
+.traders .title h1,
+.journey .title h1 {
+  font-weight: 600;
+  line-height: 100px;
+  text-align: center;
+  padding: 0px 70px;
+}
+.traders .title p,
+.journey .title p {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.funding-card {
+  width: 300px;
+  min-height: 17rem;
+  background-color: #21307d !important;
+}
+
+.journey {
+  width: 70%;
+  margin: auto;
+}
+
+.step {
+  /* width: 43%; */
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+.fundingpipes {
+  /* width: 18%; */
+  display: inline-block;
+  width: 'auto';
+  background-color: rgba(0, 0, 0, 0.15);
+}
+.step .select-btn,
+.fundingpipes .select-btn {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.step button,
+.fundingpipes button {
+  border: none;
+  font-size: 20px;
+}
+.step .select-amount {
+  background-color: transparent;
+}
+.amount {
+  display: inline-block;
+}
+
+.journey-card .card-details {
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+.journey-card .card-details .card-text {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.feild-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.landing-trade {
+  width: 1300px;
+  height: 750px;
+  background-color: rgba(2, 117, 249, 1);
+  margin-top: 180px;
+}
+.img-set {
+  top: -150px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.landing-trade  .content {
+  left: 50%;
+  transform: translateX(-50%);
+  width: 34%;
+}
+.landing-trade  .content  h1 {
+  font-size: 47px;
+}
+.landing-trade  .content  p {
+  padding: 0px 15%;
+  font-size: 16px;
+}
+
+.country-name {
+  font-size: 20px;
+}
+.country-trade {
+  font-size: 32px;
+}
+
+.slick-prev,
+.slick-next {
+  display: none;
+}
+
+/* Position the arrows at the bottom */
+.slick-prev,
+.slick-next {
+  position: absolute;
+  bottom: 0px; /* Position arrows at the bottom */
+  color: white; /* Button text color */
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 0px;
+  z-index: 1;
+  margin: 0px 40px;
+}
+
+.slick-prev {
+  top: 130%;
+  left: 40%;
+  transform: translateX(-50%);
+  /* Position left arrow on the left */
+}
+
+.slick-next {
+  top: 130%;
+  right: 40%; /* Position right arrow on the right */
+  transform: translateX(-50%);
+}
+.slick-prev:before,
+.slick-next:before {
+  font-size: 90px;
+}
+.landing-trade .content-h3 {
+  top: 400px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.card-slider .card-bg {
+  background-color: rgba(0, 1, 63, 1);
+}
+
+.tesimonials {
+  width: 90%;
+}
+
+.tesimonials .title h1 {
+  font-weight: 600;
+  font-size: 80px;
+  line-height: 120px;
+  padding: 0px 5%;
+}
+.tesimonials .title p,
+.tesimonials button {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+}
+.animation {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.animation h1 {
+  font-size: 80px;
+  width: 40%;
+  padding: 0px 40px;
+  text-align: center;
+}
+.subtitle h1 {
+  font-size: 80px;
+}
+
+.subtitle span {
+  color: rgba(255, 255, 255, 0.5);
+}
+.journey-card .card-details {
+  min-height: 380px;
+}
+@media (max-width: 1324px) {
+  .journey {
+    width: 90%;
+    margin: auto;
+  }
+  .buy-challenge h1 {
+    font-size: 70px !important;
+  }
+  .buy-challenge button {
+    font-size: 20px;
+  }
+  .landing-trade {
+    width: 70%;
+    height: 750px;
+  }
+  .slick-prev,
+  .slick-next {
+    margin: 0px 10px;
+  }
+  .landing-trade .content {
+    width: 65%;
+  }
+  .landing-trade .content h1 {
+    font-size: 60px;
+  }
+  .landing-trade .content p {
+    padding: 0px 5%;
+    font-size: 23px;
+  }
+  .landing-trade {
+    height: 800px;
+    width: 80%;
+  }
+  .tesimonials .title h1 {
+    padding: 0px;
+  }
+  .tesimonials .title p,
+  .tesimonials .title button {
+    font-size: 30px;
+    margin-top: 20px;
+  }
+  .tesimonials .title button {
+    padding: 20px 15px;
+  }
+  .tesimonials .title p {
+    padding: 0px 50px;
+  }
+  .tesimonials .title h1 {
+    font-size: 75px;
+    line-height: 100px;
+  }
+}
+@media (max-width: 1024px) {
+  .step {
+    /* width: 50%; */
+    background-color: rgba(0, 0, 0, 0.15);
+  }
+
+  .fundingpipes {
+    /* width: 'auto'; */
+    /* width: 20%; */
+  }
+  .buy-challenge button {
+    font-size: 24px;
+  }
+  .feild-value,
+  .card-text {
+    font-size: 23px;
+  }
+  .card-details {
+    min-height: 370px;
+  }
+  .landing-trade .content {
+    width: 75%;
+  }
+  .funding-card {
+    max-height: 200px !important;
+  }
+
+  .tesimonials .title p,
+  .tesimonials .title button {
+    font-size: 30px;
+    margin-top: 20px;
+  }
+  .tesimonials .title p {
+    font-size: 23px;
+    padding: 0px 60px;
+  }
+  .tesimonials .title h1 {
+    font-size: 65px;
+    line-height: 100px;
+  }
+  .heading {
+    font-size: 60px;
+  }
+}
+@media (min-width: 761px) and (max-width: 900px) {
+  .traders {
+    /* margin-top: 80px; */
+    width: 500px;
+  }
+  .card-details {
+    min-height: 370px;
+  }
+  .heading {
+    font-size: 50px;
+  }
+  .traders .title h1,
+  .journey .title h1 {
+    line-height: 60px;
+    padding: 0px 10px;
+  }
+
+  .step {
+    /* width: 60%; */
+    background-color: rgba(0, 0, 0, 0.15);
+  }
+  .fundingpipes {
+    /* width: 24%; */
+    /* width: 'auto'; */
+  }
+
+  .buy-challenge h1 {
+    font-size: 60px !important;
+  }
+  .buy-challenge button {
+    font-size: 23px;
+  }
+  .landing-trade .content {
+    width: 85%;
+  }
+  .landing-trade h3 {
+    font-size: 25px;
+  }
+  .landing-trade {
+    width: 85%;
+  }
+  .slick-prev,
+  .slick-next {
+    margin: 0px -20px;
+  }
+
+  .landing-trade .content p {
+    padding: 0px 15%;
+  }
+
+  .tesimonials .title p,
+  .tesimonials .title button {
+    font-size: 30px;
+    margin-top: 20px;
+  }
+  .tesimonials .title button {
+    padding: 20px 15px;
+  }
+  .tesimonials .title p {
+    padding: 0px 50px;
+  }
+  .tesimonials .title h1 {
+    font-size: 60px;
+    line-height: 100px;
+  }
+  .heading {
+    font-size: 50px;
+  }
+  #myVideo {
+    top: -285px;
+  }
+}
+@media (min-width: 542px) and (max-width: 640px) {
+  .testimonial-img img {
+    width: 90% !important;
+    height: 90% !important;
+  }
+}
+@media (min-width: 541px) and (max-width: 760px) {
+  .traders {
+    /* margin-top: 80px; */
+    width: 95%;
+  }
+  .step {
+    /* width: 85%; */
+    background-color: rgba(0, 0, 0, 0.15);
+  }
+  .traders .title h1,
+  .journey .title h1 {
+    line-height: 60px;
+    padding: 0px 10px;
+  }
+
+  .funding-card {
+    width: 100%;
+  }
+
+  .fundingpipes {
+    /* width: 30%; */
+    /* width: 'auto'; */
+  }
+
+  .buy-challenge h1 {
+    font-size: 50px !important;
+  }
+  .buy-challenge button {
+    font-size: 22px;
+  }
+  .landing-trade {
+    width: 99%;
+  }
+  .landing-trade .content {
+    width: 85%;
+  }
+  .landing-trade h3 {
+    font-size: 22px;
+  }
+  .slick-prev,
+  .slick-next {
+    margin: 0px -20px;
+  }
+
+  .landing-trade .content p {
+    padding: 0px 15%;
+  }
+  .tesimonials {
+    width: 94%;
+  }
+
+  .tesimonials .title p {
+    padding: 0px 50px;
+  }
+  .tesimonials .title h1 {
+    font-size: 50px;
+    line-height: 100px;
+  }
+  .heading {
+    font-size: 45px;
+  }
+
+  #myVideo {
+    top: -110px;
+  }
+}
+
+@media (max-width: 540px) {
+  .home {
+    padding: auto 2rem !important;
+  }
+  .traders {
+    /* margin-top: 80px; */
+    width: 95%;
+  }
+  .funding-card {
+    width: 95%;
+  }
+
+  .traders .title h1,
+  .journey .title h1 {
+    line-height: 60px;
+    padding: 0px 0px;
+  }
+  .step {
+    /* width: 95%; */
+    background-color: rgba(0, 0, 0, 0.15);
+  }
+
+  .fundingpipes {
+    /* width: 39%; */
+    /* width: 'auto'; */
+  }
+
+  .buy-challenge h1 {
+    font-size: 40px !important;
+  }
+  .buy-challenge button {
+    font-size: 20px;
+  }
+
+  .landing-trade .content {
+    width: 100%;
+  }
+  .landing-trade {
+    height: 700px;
+    width: 95%;
+  }
+  .landing-trade img {
+    width: 500px;
+    height: 530px;
+  }
+  .landing-trade svg {
+    width: 400px;
+    top: 150px !important;
+  }
+  .landing-trade .content {
+    width: 95%;
+  }
+  .landing-trade .content p {
+    padding: 0px 5% !important;
+  }
+  .landing-trade .content-h3 {
+    top: 315px !important;
+  }
+  .landing-trade .content h1 {
+    font-size: 45px;
+  }
+  .landing-trade h3 {
+    font-size: 23px;
+    text-align: center;
+  }
+  .slick-prev {
+    left: 30%;
+    /* Position left arrow on the left */
+  }
+
+  .slick-next,
+  .slick-prev {
+    margin: 0px -30px;
+  }
+
+  .landing-trade .content p {
+    padding: 0px 15%;
+  }
+  .country-card {
+    top: 430px !important;
+  }
+  .tesimonials .title h1 {
+    font-size: 45px;
+    line-height: 80px;
+  }
+  .testimonial-img img {
+    width: 90% !important;
+    height: 90%;
+  }
+  .animation img {
+    width: 300px !important;
+  }
+
+  .animation h1 {
+    font-size: 30px;
+  }
+  .heading {
+    font-size: 35px;
+  }
+
+  #myVideo {
+    top: -130px;
+  }
+}
+
+@media (min-width: 312px) and (max-width: 415px) {
+  .traders {
+    /* margin-top: 30px; */
+    width: 95%;
+  }
+
+  .traders .title h1,
+  .journey .title h1 {
+    line-height: 50px;
+    padding: 0px 10px;
+  }
+
+  .funding-card {
+    width: 95%;
+  }
+
+  .buy-challenge h1 {
+    font-size: 30px !important;
+  }
+  .buy-challenge button {
+    font-size: 20px;
+  }
+  .landing-trade img {
+    width: 360px;
+    height: 400px;
+  }
+  .img-set {
+    top: -125px;
+  }
+  .landing-trade .content {
+    width: 95%;
+  }
+  .landing-trade .content h1 {
+    font-size: 35px;
+  }
+  .landing-trade svg {
+    top: 45px !important;
+    width: 100%;
+  }
+  .landing-trade .content p {
+    padding: 0px 40px !important;
+    font-size: 19px;
+  }
+  .landing-trade .content-h3 {
+    top: 260px !important;
+  }
+  .card-slider .card-bg img {
+    width: 100px !important;
+  }
+  .tesimonials .title h1 {
+    font-size: 35px;
+    line-height: 55px;
+  }
+  .tesimonials .title p {
+    padding: 0px 20px;
+  }
+  .country-card {
+    top: 365px !important;
+  }
+  .heading {
+    font-size: 35px;
+  }
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  /* text-align: center; */
+  font-size: 18px;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

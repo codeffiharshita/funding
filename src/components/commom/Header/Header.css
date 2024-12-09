@@ -1,0 +1,201 @@
+.nav-font {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+}
+.navbar-main {
+  padding: 0px 20px !important;
+}
+.nav-bg {
+  background-color: #263aa8 !important;
+}
+
+.brand {
+  width: 30%;
+  display: flex;
+}
+.brand svg {
+  width: 50px;
+}
+.brand span {
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 39px;
+  display: flex;
+  align-items: center;
+}
+
+.nav-content {
+  width: 70%;
+}
+
+.nav-btn {
+  background-color: #0275f9 !important;
+}
+
+.custom-toggle .navbar-toggler-icon {
+  background-color: white;
+}
+.navbar-toggler {
+  position: fixed;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(217, 217, 217, 0.1) !important;
+  backdrop-filter: blur(2px);
+  width: 30%;
+  z-index: 1060;
+}
+.navbar-toggler span {
+  border: 1px solid white;
+  width: 40px;
+  border-radius: 50%;
+  height: 40px;
+  text-align: center;
+}
+.navbar-toggler svg {
+  width: 30px;
+  height: 40px;
+}
+/* .popup-overlay {
+  margin-top: 10px;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+.popup-overlay {
+  position: fixed; /* Ensure it stays fixed and centered */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  overflow: hidden; /* Prevent internal scrolling */
+  /* background-color: rgba(0, 0, 0, 0.5); Optional: Dim background */
+}
+/* .popup-container {
+  background: rgba(217, 217, 217, 0.1);
+  border-radius: 20px;
+  padding: 0px 20px;
+  max-width: 90%;
+  width: 290px;
+  height: 500px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 1;
+  backdrop-filter: blur(2px);
+} */
+.popup-container {
+  background-color: rgba(217, 217, 217, 0.1);
+  border-radius: 20px;
+  padding: 20px;
+  max-width: 90%;
+  width: 290px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+  backdrop-filter: blur(2px);
+  display: flex;
+  flex-direction: column; /* Stack links and buttons */
+  justify-content: center; /* Vertically center content within container */
+  gap: 20px;
+  height: auto; /* Adjust height dynamically */
+  overflow: visible; /* Ensure no clipping */
+}
+.popup-button {
+  width: 70%;
+  margin: auto;
+  border-radius: 20px !important;
+}
+.popup-link {
+  font-size: 20px !important;
+  font-weight: 700px !important;
+  font-family: 'Poppins', sans-serif;
+}
+.header2 {
+  background-color: rgba(0, 0, 0, 0.50);
+}
+
+@media (max-width: 990px) {
+  .header2 {
+    background-color: none;
+  }
+}
+@media only screen and (max-width: 775px) {
+  .brand {
+    width: 70%;
+  }
+  .nav-content {
+    width: 10%;
+  }
+  .brand svg {
+    width: 30px;
+  }
+  .brand span {
+    font-size: 23px;
+    margin-left: 5px;
+  }
+}
+@media (max-width: 560px) {
+  .navbar-toggler {
+    padding: 10px 0px !important;
+  }
+  .navbar-toggler span {
+    width: 30px;
+    border-radius: 50%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .navbar-toggler svg {
+    width: 15px;
+    height: 30px;
+  }
+  .navbar-toggler h3 {
+    font-size: 20px;
+    margin: auto 0px;
+  }
+}
+
+@media (max-width: 414px) {
+  .navbar-toggler h3 {
+    font-size: 16px;
+  }
+  .navbar-toggler span {
+    width: 25px;
+    height: 25px;
+  }
+  .navbar-toggler {
+    padding: 8px 7px !important;
+    bottom: 20px;
+    width: 30% !important;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .brand {
+    width: 80%;
+  }
+  .nav-content {
+    width: 10%;
+  }
+
+  .brand span {
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 39px;
+    display: flex;
+    align-items: center;
+  }
+  .brand svg {
+    width: 25px;
+  }
+}
