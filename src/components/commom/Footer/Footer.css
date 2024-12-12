@@ -130,6 +130,10 @@
     width: 90%;
     padding: 0px;
   }
+  .feild-value,
+  .card-text {
+    font-size: 16px;
+  }
 }
 @media (max-width: 990px) {
   .social .soical-detail {
@@ -327,6 +331,13 @@
   }
   .about .iso {
     padding: 0px 0px !important;
+  }
+  .feild-value,
+  .card-text {
+    font-size: 17px;
+  }
+  .footer .cards {
+    width: 100%;
   }
 }
 

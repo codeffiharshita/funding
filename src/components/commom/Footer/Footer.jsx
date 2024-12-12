@@ -26,23 +26,20 @@ import {
   VisaCard,
   YoutubeSvg
 } from "../../svg";
+import SocialIcon from "../SocialIcon";
 const Footer = () => {
   const [rating, setRating] = useState(4.5); // Holds the current rating
   const [hovered, setHovered] = useState(null); // Holds the hovered state
 
-  const handleMouseOver = index => setHovered(index);
+  const handleMouseOver = (index) => setHovered(index);
   const handleMouseLeave = () => setHovered(null);
-  const handleClick = index => setRating(index);
-  console.log(rating, "rating");
+  const handleClick = (index) => setRating(index);
 
-  const renderStar = index => {
-    console.log(index, "index");
-
+  const renderStar = (index) => {
     const isFullStar = Number.isInteger(rating);
     for (let i = 0; i <= index; i++) {
       if (i + 1 < Math.floor(rating)) {
         // Full star
-        console.log(i, "i");
 
         return <FaStar key={i} size={40} color="gold" />;
       } else if (i + 1 === Math.ceil(rating) && rating % 1 !== 0) {
@@ -303,26 +300,7 @@ const Footer = () => {
               lg={4}
               className="mb-2 mb-md-0 mt-md-2 links"
             >
-              <div className="d-flex justify-content-center social-link align-items-center">
-                <a href="#discord" className="text-white">
-                  <DiscordSvg />
-                </a>
-                <a href="#facebook" className="text-white">
-                  <FacebookSvg />
-                </a>
-                <a href="#instagram" className="text-white">
-                  <InstagramSvg />
-                </a>
-                <a href="#linkedin" className="text-white">
-                  <LinkedInSvg />
-                </a>
-                <a href="#youtube" className="text-white">
-                  <YoutubeSvg />
-                </a>
-                <a href="#email" className="text-white">
-                  <TwitterSvg />
-                </a>
-              </div>
+              <SocialIcon />
             </Col>
 
             {/* Right Section - Google Ratings and Trustpilot */}

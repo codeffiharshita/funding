@@ -1,0 +1,226 @@
+.about-us .title {
+  width: 90%;
+}
+.about-us .title h1 {
+  padding: 0px 18%;
+}
+.about-us .title p {
+  padding: 0px 10%;
+}
+.about-us .title h1 {
+  padding-top: 8%;
+}
+.about-us .title p {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: center;
+  padding-top: 3%;
+}
+.about-us .mission {
+  width: 70%;
+  margin: auto;
+  text-align: end;
+}
+.mission-card {
+  left: 3%;
+  top: 80%;
+  overflow: hidden;
+}
+.mission-card .card {
+  max-width: 300px;
+  background-color: rgba(33, 48, 125, 0.3) !important;
+  border: none;
+  backdrop-filter: blur(4px);
+}
+.mission .image {
+  margin-top: 5%;
+}
+.about-us .vision {
+  margin-top: 10%;
+}
+.vision {
+  width: 90%;
+  padding-right: 30%;
+}
+.vision p {
+  font-size: 30px;
+  line-height: 45px;
+  font-weight: 600;
+  margin-top: 4%;
+}
+.core {
+  width: 90%;
+  margin: auto;
+}
+.core .cards .card {
+  background-color: rgba(0, 0, 136, 0.5);
+  padding: 10% 8%;
+  max-height: 95%;
+}
+.core .cards .card h2 {
+  margin-top: 4%;
+}
+.core .cards .card p {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 600;
+}
+.creative .creative-title h1 {
+  padding-right: 50%;
+  font-weight: 400;
+  padding-left: 5%;
+  margin-top: 5%;
+}
+.join-journey p {
+  padding: 0px 20%;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+@media (max-width: 1290px) {
+  .about-us .title h1 {
+    padding: 4% 9%;
+  }
+}
+@media (max-width: 990px) {
+  .about-us .title {
+    width: 95%;
+  }
+  .about-us .title h1,
+  p {
+    padding: 3% !important;
+  }
+
+  .mission-card p {
+    padding: 0px !important;
+  }
+  .about-us .vision {
+    margin-top: 15%;
+  }
+  .vision p {
+    font-size: 25px;
+  }
+  .join-journey p {
+    padding: 0px 10%;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  .about-us .title h1 {
+    padding: 5% 6% !important;
+  }
+  .about-us .vision {
+    margin-top: 20%;
+  }
+  .vision {
+    padding-right: 20%;
+  }
+  .vision p {
+    font-size: 20px;
+    line-height: 40px;
+    margin-top: 0%;
+  }
+  .core .cards .card {
+    padding: 5% 3%;
+  }
+  .core .cards .card p {
+    padding: 0% !important;
+  }
+  .creative .creative-title h1 {
+    padding-right: 25%;
+  }
+  .mission-card .card {
+    max-width: 250px;
+  }
+  .mission-card {
+    left: -8%;
+  }
+}
+@media (max-width: 590px) {
+  .about-us .title h1 {
+    padding: 0px 0%;
+  }
+  .about-us .title p {
+    font-size: 15px;
+  }
+  .mission-card {
+    left: -10%;
+    top: 60%;
+  }
+  .mission-card .card {
+    max-width: 200px !important;
+  }
+  .mission-card p {
+    font-size: 14px;
+  }
+  .mission-card .card-body {
+    padding: 0px !important;
+  }
+  .mission-card .card {
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+  }
+  .creative .creative-title h1 {
+    padding-right: 25%;
+  }
+  .creative .creative-title h1 {
+    padding-right: 0%;
+    text-align: center;
+    padding-left: 0%;
+    font-size: 30px;
+  }
+  .join-journey p {
+    padding: 0px 2% !important;
+    font-size: 14px;
+  }
+  .mission .image img {
+    width: 75% !important;
+  }
+}
+
+@media (max-width: 425px) {
+  .about-us .vision {
+    margin-top: 30%;
+  }
+  .vision {
+    width: 90%;
+    padding-right: 0%;
+  }
+  .vision p {
+    font-size: 16px;
+    line-height: 35px;
+  }
+  .about-us .core {
+    width: 100%;
+  }
+  .about-us .core h1 {
+    text-align: center;
+  }
+  .core .cards .card {
+    padding: 1%;
+  }
+  .core .cards .card .card-subtitle,
+  .core .cards .card h2 {
+    margin-top: 0% !important;
+    margin-bottom: 0% !important;
+  }
+  .core .cards .card-body {
+    gap: 1rem !important;
+    justify-content: space-between;
+    padding: 10% 5%;
+  }
+  .join-journey h1 {
+    text-align: center;
+    font-size: 26px;
+  }
+  .about-us .title h1 {
+    padding: 5% 2% !important;
+  }
+  .mission-card p {
+    font-size: 12px;
+    padding: 5px 10px !important;
+  }
+}

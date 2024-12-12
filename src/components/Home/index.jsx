@@ -36,7 +36,7 @@ import {
 } from "../svg";
 // import required modules
 
-const animation = { duration: 10000, easing: (t) => t };
+const animation = { duration: 5000, easing: (t) => t };
 const animation2 = { duration: 5000, easing: (t) => t };
 const animation3 = { duration: 8000, easing: (t) => t };
 function Arrow(props) {
@@ -63,7 +63,7 @@ const Home = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [sliderRef, instanceRef] = useKeenSlider({
     slides: {
-      perView: 4 // Default number of slides visible
+      perView: 5,
     },
     loop: true,
     renderMode: "performance",
@@ -96,14 +96,15 @@ const Home = () => {
     // },
     breakpoints: {
       "(max-width: 470px)": {
-        slides: { perView: 2 }
+        slides: { perView: 2 ,spacing:15 }
       },
       "(min-width: 471px) and (max-width: 991px)": {
-        slides: { perView: 3 }
+        slides: { perView: 3,spacing:25  }
       },
+   
       "(min-width: 992px)": {
-        slides: { perView: 4 }
-      }
+        slides: { perView: 4 ,spacing:35 }
+      },
     }
   });
   const [sliderRef4] = useKeenSlider({
@@ -1401,34 +1402,14 @@ const Home = () => {
             className="position-absolute country-card"
           >
             <div className="position-relative">
-              {/* <Slider {...settings}>
-                {countryData?.map((item, index) => (
-                  <div key={`country-${index}`}>
-                    <Card className="rounded-4 bg-transparent mx-3 border-white">
-                      <Card.Body>
-                        <div className="d-flex gap-2">
-                          {item.svg}
-                          <Card.Subtitle className="text-white country-name my-1">
-                            {item?.name}
-                          </Card.Subtitle>
-                        </div>
-
-                        <Card.Text className="text-white country-trade">
-                          {item?.amount}
-                        </Card.Text>
-                      </Card.Body>
-                    </Card>
-                  </div>
-                ))}
-              </Slider> */}
               <div className="position-relative" style={{ overflow: "hidden" }}>
                 <div ref={sliderRef} className="keen-slider">
                   {countryData?.map((item, index) => (
                     <div
                       key={`country-${index}`}
-                      className="keen-slider__slide mx-md-1"
+                      className="keen-slider__slide"
                     >
-                      <Card className="rounded-4 bg-transparent mx-3 border-white">
+                      <Card className="rounded-4 bg-transparent border-white">
                         <Card.Body>
                           <div className="d-flex gap-2">
                             {item.svg}

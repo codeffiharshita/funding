@@ -487,6 +487,33 @@
   .funding {
     margin-top: 3rem;
   }
+  .landing-trade img {
+    width: 500px;
+    height: 490px;
+  }
+  .landing-trade .bg-svg svg {
+    width: 450px !important;
+    top: 105px !important;
+  }
+  .landing-trade .content h1 {
+    font-size: 45px;
+  }
+  .landing-trade .content {
+    width: 90%;
+    padding-top: 0px;
+  }
+  .landing-trade .content p {
+    padding: 0px 10%;
+    font-size: 21px;
+  }
+  .landing-trade .content-h3 {
+    top: 350px;
+    left: -20%;
+    transform: translateX(50%);
+  }
+  .landing-trade h3 {
+    font-size: 30px;
+  }
 }
 
 @media (max-width: 540px) {
@@ -511,9 +538,8 @@
     background-color: rgba(0, 0, 0, 0.15);
   }
 
-  .fundingpipes {
-    /* width: 39%; */
-    /* width: 'auto'; */
+  .content {
+    top: 60%;
   }
 
   .buy-challenge h1 {
@@ -604,9 +630,8 @@
     top: 0%;
     transform: translateY(45%);
   }
-
-  .content {
-    top: 0%;
+  .landing-trade svg {
+    width: 30px;
   }
 }
 @media (min-width: 416px) and (max-width: 541px) {
@@ -619,15 +644,12 @@
     top: -114px;
   }
   .landing-trade svg {
-    width: 345px;
     top: 50px !important;
   }
   .landing-trade .content h1 {
     font-size: 35px;
   }
-  .content {
-    padding: 0px 20px;
-  }
+
   .landing-trade .content p {
     font-size: 18px;
     padding: 0px 0%;
@@ -744,9 +766,6 @@
   .traders .title p,
   .journey .title p {
     font-size: 15px;
-  }
-  .content {
-    top: 0%;
   }
 
   #myVideo {

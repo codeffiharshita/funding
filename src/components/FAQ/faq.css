@@ -1,0 +1,138 @@
+.faq .navbar-brand {
+  font-weight: 600;
+}
+
+.faq .nav-link {
+  font-size: 16px;
+  font-weight: 500;
+  padding: 0px !important;
+}
+.faq .navbar-nav a {
+  color: black !important;
+  text-decoration: none;
+  font-weight: 600;
+}
+.faq #language-dropdown .dropdown-item {
+  font-size: 14px;
+}
+
+.faq h1 {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 60px;
+}
+input::placeholder {
+  color: rgba(0, 0, 0, 1);
+  font-size: 20px;
+  font-weight: 400;
+}
+.list-group .active-article {
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+  background-color: #f8f9fa;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+}
+
+.list-group .bg-list {
+  background-color: rgba(67, 135, 212, 0.1);
+  color: rgba(2, 117, 249, 1);
+}
+.faq .allCards .card {
+  min-height: 120px;
+}
+.faq .allCards .card-title {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 36px;
+}
+.faq .allCards .card-text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+}
+.faq .allCards svg {
+  width: 80px;
+  height: 80px;
+}
+.faq-svg svg {
+  color: black;
+  margin: 0px 10px;
+}
+.faq .faq-link {
+  gap: 1rem !important;
+}
+
+@media (max-width: 1200px) {
+  .faq .allCards .card {
+    min-height: 150px;
+  }
+}
+@media (max-width: 990px) {
+  .faq .allCards .card {
+    min-height: 185px;
+  }
+}
+@media (max-width: 599px) {
+  .list-group .active-article {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+  }
+  .faq .navbar-nav a {
+    margin: 3% 0px;
+  }
+  .faq h1 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: left !important;
+  }
+  input::placeholder {
+    font-size: 12px;
+    padding-top: 10px;
+  }
+  .input-group svg {
+    width: 18px;
+  }
+  .faq .allCards .card {
+    min-height: 150px;
+  }
+}
+
+@media (max-width: 425px) {
+  .faq .allCards svg {
+    width: 40px;
+    height: 40px;
+  }
+  .faq .allCards .card-title {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .faq .allCards .card-text {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+  }
+  .faq .allCards .card-body {
+    gap: 0.2rem !important;
+  }
+  .faq-svg svg {
+    width: 25px;
+    height: 25px;
+  }
+  .faq .faq-link span,
+  .faq .capital h1 {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+  }
+  .faq .logo svg {
+    width: 40px;
+    height: 40px;
+  }
+}

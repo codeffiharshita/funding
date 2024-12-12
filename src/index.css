@@ -8,6 +8,7 @@ body {
   padding: 0;
   overflow-x: hidden;
   box-sizing: border-box;
+  font-family: 'Poppins', sans-serif !important;
 }
 .main {
   background-color: #263aa8;
