@@ -1,0 +1,84 @@
+.sign-in .badge-svg svg {
+  margin-top: -15% !important;
+}
+
+.sign-in .text {
+  font-size: 26px;
+  line-height: 39px;
+  font-weight: 600;
+}
+
+.sign-in .account {
+  font-size: 30px;
+  line-height: 45px;
+  font-weight: 700;
+}
+
+.form-label {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+input::placeholder {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+}
+.form-check-input[type=checkbox] {
+  border-radius: .25em;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  background-color: rgba(217, 217, 217, 1);
+  border: 0.5px solid rgba(0, 0, 0, 0.3);
+  width: 20px;
+  height: 20px;
+}
+
+.submit button {
+  background-color: rgba(33, 48, 125, 1);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+}
+.submit .btn:hover {
+  background-color: rgba(33, 48, 125, 1);
+}
+.privacy p,
+.create-account p {
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 400;
+}
+@media (max-width: 590px) {
+  .sign-in .text {
+    font-size: 18px;
+    line-height: 27px;
+  }
+  .sign-in .account {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .form-label {
+    font-size: 10px;
+    line-height: 15px;
+  }
+
+  input::placeholder {
+    font-size: 8px;
+    line-height: 12px;
+  }
+  .sign-in .input-main {
+    margin-bottom: 0rem !important;
+  }
+  .form-check label {
+    font-size: 12px;
+  }
+  .submit button,
+  .forget {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .forget {
+    margin-top: 5px;
+  }
+}

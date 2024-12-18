@@ -1,0 +1,121 @@
+.dash-home  a {
+  color: #6b7280 !important;
+  text-decoration: none;
+  font-size: 20px !important;
+  font-weight: 600;
+}
+.doubt {
+  padding: 3rem;
+}
+.faq-dash div {
+  margin: 3% 0% !important;
+}
+.gradient-card {
+  width: 100%;
+  max-width: 600px; /* Adjust based on your design */
+  border-radius: 16px; /* Rounded corners */
+  padding: 10px 20px; /* Inner spacing */
+  background: linear-gradient(
+    110deg,
+    rgb(95, 40, 254, 0.9) 30%,
+    rgba(216, 203, 240, 0.84) 80%,
+    rgba(0, 56, 255)
+  );
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Optional shadow */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white !important;
+  border: none !important;
+}
+
+.gradient-card .card-title,
+.gradient-card .card-subtitle {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+}
+.gradient-card p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.gradient-card button,
+.discord {
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: 600;
+  text-align: center;
+}
+.discord svg {
+  width: 20px;
+  height: 20px;
+}
+
+.feq-que {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 50px;
+}
+
+.faq-dash .nav-link a {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 25px;
+}
+@media (max-width: 1200px) {
+  .feq-que {
+    font-size: 20px;
+    line-height: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .gradient-card .card-title,
+  .gradient-card .card-subtitle {
+    font-size: 20px !important;
+    line-height: 36px;
+  }
+  .gradient-card p {
+    font-size: 12px !important;
+    line-height: 21px;
+  }
+  .gradient-card .champion-card {
+    flex-wrap: wrap;
+  }
+  .champion-svg {
+    order: -1;
+  }
+  .order-que {
+    order: -1;
+  }
+  .discord svg {
+    width: 10px;
+    height: 10px;
+  }
+  .doubt {
+    padding: 1rem !important;
+  }
+  .order-que {
+    text-align: center;
+  }
+  .doubt h3 {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .feq-que {
+    padding-right: 105px;
+  }
+  .dash-social {
+    justify-content: center !important;
+  }
+  .doubt button {
+    padding: 0px;
+  }
+}
+
+@media (max-width: 590px) {
+  .faq-dash a {
+    font-size: 14px !important;
+  }
+}

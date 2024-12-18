@@ -85,10 +85,10 @@
   background-color: #0275f9 !important;
 }
 
-.custom-toggle .navbar-toggler-icon {
+.main-header .custom-toggle .navbar-toggler-icon {
   background-color: white;
 }
-.header2 .navbar-toggler {
+.main-header .navbar-toggler {
   position: fixed;
   bottom: 50px;
   left: 50%;
@@ -98,14 +98,14 @@
   width: 30%;
   z-index: 1060;
 }
-.header2 .navbar-toggler span {
+.main-header .navbar-toggler span {
   border: 1px solid white;
   width: 40px;
   border-radius: 50%;
   height: 40px;
   text-align: center;
 }
-.header2 .navbar-toggler svg {
+.main-header .navbar-toggler svg {
   width: 30px;
   height: 40px;
 }
@@ -197,10 +197,10 @@
   }
 }
 @media (max-width: 560px) {
-  .header2 .navbar-toggler {
+  .main-header .navbar-toggler {
     padding: 10px 0px !important;
   }
-  .header2 .navbar-toggler span {
+  .main-header .navbar-toggler span {
     width: 30px;
     border-radius: 50%;
     height: 30px;
@@ -208,25 +208,25 @@
     justify-content: center;
     align-items: center;
   }
-  .header2 .navbar-toggler svg {
+  .main-header .navbar-toggler svg {
     width: 15px;
     height: 30px;
   }
-  .header2 .navbar-toggler h3 {
+  .main-header .navbar-toggler h3 {
     font-size: 20px;
     margin: auto 0px;
   }
 }
 
 @media (max-width: 414px) {
-  .header2 .navbar-toggler h3 {
+  .main-header .navbar-toggler h3 {
     font-size: 16px;
   }
-  .header2 .navbar-toggler span {
+  .main-header .navbar-toggler span {
     width: 25px;
     height: 25px;
   }
-  .header2 .navbar-toggler {
+  .main-header .navbar-toggler {
     padding: 8px 7px !important;
     bottom: 20px;
     width: 30% !important;

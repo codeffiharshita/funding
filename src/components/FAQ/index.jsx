@@ -81,7 +81,7 @@ const FAQ = () => {
   ];
   const [select, setSelect] = useState(0);
   return (
-    <div className="bg-light text-dark faq">
+    <div className="text-dark faq">
       <Navbar bg="white" expand="lg" className=" py-2">
         <Container>
           {/* Left Section */}

@@ -1,0 +1,99 @@
+.competitions  a {
+  color: #6b7280 !important;
+  text-decoration: none;
+  font-size: 20px !important;
+  font-weight: 600;
+}
+.competitions {
+  padding-right: 3rem !important;
+  padding-left: 3rem !important;
+}
+.svg-div {
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+.competitions .featured-comp {
+  font-size: 30px;
+  line-height: 45px;
+  font-weight: 700;
+}
+.competitions .ends {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+.competitions .month-comp {
+  font-size: 32px;
+  line-height: 48px;
+  font-weight: 600;
+}
+
+.competitions .buttons button {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 600;
+}
+
+.competitions .month-detail {
+  font-size: 10px;
+  line-height: 12px;
+  font-weight: 400;
+}
+.competitions .month-svg svg {
+  width: 25px;
+  height: 25px;
+}
+@media (max-width: 990px) {
+  .competitions .featured-comp {
+    font-size: 25px;
+  }
+  .competitions .month-comp {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .competitions .svg-div {
+    padding: 0.5rem !important;
+  }
+  .competitions .month-svg .detail span {
+    font-size: 10px;
+  }
+  .competitions .month-svg .detail b {
+    font-size: 12px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .competitions .featured-comp {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .competitions .month-comp {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .competitions .month-svg {
+    gap: 1rem !important;
+  }
+  .competitions .main-card .card {
+    padding: 0.5rem !important;
+  }
+  .competitions .month-svg svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .competitions .month-svg .detail {
+    gap: 0.5rem !important;
+  }
+
+  .competitions {
+    padding-right: 1rem !important;
+    padding-left: 1rem !important;
+  }
+}
+
+@media (max-width:540px){
+.competitions .main-card .second-card{
+    flex-wrap: wrap;
+}
+}

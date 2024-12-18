@@ -11,18 +11,30 @@ import Affiliate from "./components/Affiliate";
 import FAQ from "./components/FAQ";
 import SignUp from "./components/SignUp";
 import SignIn from "./components/SignIn";
+import Sidebar from "./components/commom/Sidebar";
+import Dashboard from "./components/Dashboard";
+import Reward from "./components/Dashboard/Reward";
+import DashboardHome from "./components/Dashboard/Home";
 
 function App() {
   const location = useLocation();
-  const isShowHeader = ["/faq", "/sign-up", "/sign-in"].includes(
+  const isShowHeader = ["/faq", "/sign-up", "/sign-in", "/sidebar"].includes(
     location.pathname
   );
+  const isDashboard = [
+    "/dashboard",
+    "/dashboard/reward",
+    "/dashboard/new-reward",
+    "/dashboard/competitions"
+  ].includes(location.pathname);
   return (
-    <div className="main">
+    <div className={!isShowHeader && !isDashboard ? "main" : "bg-light"}>
       {!isShowHeader &&
+        !isDashboard &&
         <section className="header">
           <Header />
         </section>}
+      {/* {isDashboard && <Sidebar />} */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/terms" element={<Terms />} />
@@ -33,7 +45,9 @@ function App() {
         <Route path="/sign-up" element={<SignUp />} />
         <Route path="/sign-in" element={<SignIn />} />
       </Routes>
+      {isDashboard && <Dashboard />}
       {!isShowHeader &&
+        !isDashboard &&
         <section className="pb-2">
           <Footer />
         </section>}

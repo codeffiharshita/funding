@@ -50,7 +50,7 @@ function Header() {
     };
   }, []);
   return (
-    <>
+    <div className="main-header">
       <Navbar
         expand="lg"
         className={`${isScrolled ? "header2" : "nav-bg"} navbar-main`}
@@ -121,7 +121,10 @@ function Header() {
               >
                 Sign Up
               </Button>
-              <Button className="nav-btn text-white rounded-3">
+              <Button
+                className="nav-btn text-white rounded-3"
+                onClick={() => navigate("/dashboard")}
+              >
                 Dashboard
               </Button>
             </div>
@@ -172,7 +175,11 @@ function Header() {
                 >
                   Sign Up
                 </Button>
-                <Button variant="primary" className="popup-button">
+                <Button
+                  variant="primary"
+                  className="popup-button"
+                  onClick={() => navigate("/dashboard")}
+                >
                   Dashboard
                 </Button>
               </div>
@@ -181,6 +188,7 @@ function Header() {
           </div>
         </>
       )}
+      {console.log(isLargeScreen, "isLarge")}
       {!isLargeScreen && (
         <div
           className={
@@ -208,7 +216,7 @@ function Header() {
           <h3 className="">Navigation</h3>
         </div>
       )}
-    </>
+    </div>
   );
 }
 

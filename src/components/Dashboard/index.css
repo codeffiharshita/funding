@@ -1,0 +1,23 @@
+.main-dash {
+  overflow-y: scroll;
+  margin-left: 12% !important;
+}
+.alert-text {
+  font-size: 16px !important;
+  font-weight: 600;
+  line-height: 24px;
+}
+@media (max-width: 990px) {
+  .main-dash {
+    margin-left: 20% !important;
+  }
+}
+@media (max-width: 768px) {
+  .main-dash {
+    margin-left: 30% !important;
+  }
+  .alert-text {
+    font-size: 10px !important;
+    line-height: 15px;
+  }
+}

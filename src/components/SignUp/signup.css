@@ -34,6 +34,15 @@ input::placeholder {
   height: 20px;
 }
 
+.submit button {
+  background-color: rgba(33, 48, 125, 1);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+}
+.submit .btn:hover {
+  background-color: rgba(33, 48, 125, 1);
+}
 @media (max-width: 590px) {
   .sign-up .text {
     font-size: 18px;
@@ -57,5 +66,18 @@ input::placeholder {
   }
   .form-check label {
     font-size: 12px;
+  }
+  .submit button,
+  .create-account a,
+  .privacy{
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .create-account {
+    background-color: rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+  }
+  .create-account a {
+    color: white !important;
   }
 }

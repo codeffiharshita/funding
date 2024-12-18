@@ -3,7 +3,7 @@ import { Form } from "react-bootstrap";
 
 const Input = ({ title = "", placeholder = "", type = "text", require }) => {
   return (
-    <Form.Group className="mb-3 input-main" controlId="formBasicEmail">
+    <Form.Group className="mb-2 input-main" controlId="formBasicEmail">
       <Form.Label>
         {title}
         {require && <span style={{ color: "red" }}>*</span>}

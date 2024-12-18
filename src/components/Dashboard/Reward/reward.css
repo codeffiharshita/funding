@@ -1,0 +1,152 @@
+.dash-reward  a,
+.dash-rewardnew a,
+.new-reward-content .back span {
+  color: #6b7280 !important;
+  text-decoration: none;
+  font-size: 20px !important;
+  font-weight: 600;
+}
+
+.reward-head {
+  font-size: 30px;
+  line-height: 45px;
+  font-weight: 600;
+}
+
+.reward-button svg {
+  width: 25px;
+  height: 25px;
+}
+
+.reward-button button {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 600;
+  background-color: rgba(2, 117, 249, 1);
+  text-align: center;
+}
+
+.reward-content h4 {
+  font-size: 22px;
+  line-height: 33px;
+  font-weight: 600;
+}
+.reward-content p {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
+}
+.reward-button {
+  text-align: right !important;
+}
+.dash-rewardnew .greater svg {
+  width: 15px;
+  height: 15px;
+}
+.new-reward-content {
+  width: 50%;
+}
+.new-reward-content .back svg {
+  width: 25px;
+  height: 25px;
+}
+.new-reward-head {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 600;
+}
+.new-reward-content p {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+.new-reward-content .buttons {
+  background-color: rgba(67, 135, 212, 0.25);
+  text-align: center;
+}
+.note {
+  color: rgba(253, 85, 116, 1);
+}
+.new-reward-content .step {
+  display: inline-block;
+  background-color: rgba(67, 135, 212, 0.25);
+}
+.new-reward-content .step button {
+  margin: 5px;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 500;
+}
+
+select {
+  width: 100%;
+  padding: 8px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  appearance: auto; /* Ensures default styles */
+  cursor: pointer;
+}
+.new-reward {
+  padding: 3rem 0% !important;
+}
+@media (max-width: 768px) {
+  .reward-head {
+    font-size: 26px;
+    line-height: 30px;
+  }
+  .reward-content h4 {
+    font-size: 18px;
+    line-height: 27px;
+  }
+  .reward-content p,
+  .reward-button button {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .reward-button svg {
+    width: 15px;
+    height: 15px;
+  }
+  .reward-button {
+    text-align: center !important;
+  }
+
+  table th {
+    font-size: 10px;
+    line-height: 15.6px;
+    text-align: center;
+    padding: 0.5rem 0rem;
+  }
+  .new-reward-content {
+    width: 80%;
+  }
+  .new-reward {
+    padding-top: 0% !important;
+  }
+  .new-reward-content {
+    margin-top: 0.5rem !important;
+  }
+  .new-reward-content .back svg {
+    width: 20px;
+    height: 20px;
+  }
+  .new-reward-head {
+    font-size: 18px;
+    line-height: 27px;
+  }
+  .new-reward-content p {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .new-reward-content .step button {
+    font-size: 10px;
+    line-height: 15px;
+  }
+  .new-reward-content li,
+  select {
+    font-size: 10px;
+    line-height: 15px;
+    font-weight: 700;
+  }
+}

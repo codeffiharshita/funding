@@ -3,6 +3,7 @@ import { Button, Col, Form, Row } from "react-bootstrap";
 import { LogoBudgeSvg, LogoSvg } from "../svg";
 import "./signup.css";
 import Input from "../commom/Input";
+import { NavLink } from "react-router-dom";
 const SignUp = () => {
   return (
     <div
@@ -10,7 +11,7 @@ const SignUp = () => {
       style={{ overflowX: "hidden" }}
     >
       <Row className="justify-content-center align-items-center">
-        <Col md={6} className="border rounded-4 px-4 py-5">
+        <Col md={6} className="border rounded-4 px-4 py-5 pb-3">
           <Form>
             <div className="d-flex gap-3 align-items-center">
               <div className="logo">
@@ -79,9 +80,21 @@ const SignUp = () => {
                 label="I certify that I am 18 years of age or older, agree to the User Agreement, and acknowledge the Privacy policy."
               />
             </Form.Group>
-            <Button variant="primary" type="submit">
-              Submit
-            </Button>
+            <div className="submit">
+              <Button className="w-100" type="submit">
+                Create Account
+              </Button>
+            </div>
+            <p className="text-center mt-4">
+              Already have an account?{" "}
+              <NavLink
+                to="/sign-in"
+                style={{ textDecoration: "none" }}
+                className="text-dark"
+              >
+                Login Here
+              </NavLink>
+            </p>
           </Form>
         </Col>
       </Row>

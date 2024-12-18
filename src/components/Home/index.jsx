@@ -1096,7 +1096,7 @@ const Home = () => {
               <Col xs="auto" sm="auto" md="auto" lg="auto">
                 <Button
                   className={`${
-                    select === "step1" ? "btn-primary" : "select-btn "
+                    select === "step1" ? "btn-primary" : "sel-btn "
                   } py-2 px-4 text-white rounded-4`}
                   onClick={() => {
                     setSelect("step1");
@@ -1109,7 +1109,7 @@ const Home = () => {
               <Col xs="auto" sm="auto" md="auto" lg="auto">
                 <Button
                   className={`${
-                    select === "step2" ? "btn-primary" : "select-btn "
+                    select === "step2" ? "btn-primary" : "sel-btn "
                   } py-2 px-4  text-white rounded-4`}
                   onClick={() => {
                     setSelect("step2");
@@ -1127,7 +1127,7 @@ const Home = () => {
               <Col xs="auto" sm="auto" md="auto" lg="auto">
                 <Button
                   className={`${
-                    select === "step3" ? "btn-primary" : "select-btn "
+                    select === "step3" ? "btn-primary" : "sel-btn "
                   } py-2 px-4  text-white rounded-4`}
                   onClick={() => {
                     setSelect("step3");
